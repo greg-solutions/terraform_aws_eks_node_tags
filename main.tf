@@ -56,7 +56,7 @@ resource "kubernetes_daemonset" "name_tag_attach" {
                 field_path = "spec.nodeName"
               }
             }
-          },
+          }
           env {
             name = "POD_NAME"
             value_from {
@@ -64,7 +64,7 @@ resource "kubernetes_daemonset" "name_tag_attach" {
                 field_path = "metadata.name"
               }
             }
-          },
+          }
           env {
             name = "POD_NAMESPACE"
             value_from {
@@ -72,7 +72,7 @@ resource "kubernetes_daemonset" "name_tag_attach" {
                 field_path = "metadata.namespace"
               }
             }
-          },
+          }
           env {
             name = "POD_IP"
             value_from {
